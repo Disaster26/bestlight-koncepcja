@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bestlight - alarmy, monitoring, elektryka i sieci IT, Bielsk Podlaski, Białystok</title>
+<meta name="description" content="Bestlight Teleinformatyka: instalacje alarmowe, monitoring, instalacje elektryczne, sieci IT i automatyka bram CAME i NICE. Bielsk Podlaski, Białystok i okolice. Tel. 501 704 289.">
+<meta name="theme-color" content="#0168B3">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-720.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1440.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/bsc-600-r.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/barlow-400-r.woff2" crossorigin>
+<style>
+@font-face{font-family:Barlow;src:url(fonts/barlow-400-r.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Barlow;src:url(fonts/barlow-400-pl.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Barlow;src:url(fonts/barlow-600-r.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Barlow;src:url(fonts/barlow-600-pl.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:BSC;src:url(fonts/bsc-600-r.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:BSC;src:url(fonts/bsc-600-pl.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"BSC fb";src:local("Arial Narrow"),local("Arial");size-adjust:92%;ascent-override:96%}
+@font-face{font-family:"Barlow fb";src:local("Arial");size-adjust:96%;ascent-override:96%}
+:root{--b:#0168B3;--b2:#01579A;--deep:#062C52;--ink:#0F1B2A;--mut:#4D5A6B;--g:#EEF2F6;--line:#D6DDE7;--hh:70px;--w:min(92vw,1720px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Barlow,"Barlow fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16.5px,.3vw + 15px,19.5px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:BSC,"BSC fb",Barlow,sans-serif;font-weight:600;line-height:1.05;letter-spacing:-.005em;color:var(--ink)}
+h1{font-size:clamp(38px,3.9vw + 12px,96px);text-wrap:balance;color:#fff}
+h2{font-size:clamp(32px,2.5vw + 14px,68px);text-wrap:balance}
+h3{font-size:clamp(23px,.6vw + 18px,31px);line-height:1.1}
+p{margin:0}
+.wrap{width:var(--w);margin-inline:auto}
+.sec{padding:clamp(64px,7vw,140px) 0}
+.g{background:var(--g)}
+.lead{font-size:clamp(18px,.45vw + 15.5px,23px);color:var(--mut);max-width:60ch}
+/* znak marki: linia zakonczona wezlem (z tla logo) */
+.lw{width:34px;height:14px;flex:none;overflow:visible}
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:56px;padding:0 24px 0 28px;border:0;border-radius:2px;background:var(--b);color:#fff;font:inherit;font-weight:600;font-size:18px;text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--b2)}
+.btn .lw{transition:transform .25s}
+.btn:hover .lw{transform:translateX(4px)}
+.btn.w{background:#fff;color:var(--b)}
+.btn.w:hover{background:#E6F0F9}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #7FB8E6;outline-offset:3px}
+/* separator sekcji: przylacze z wezlem */
+.przy{display:flex;align-items:center;gap:0;margin-bottom:clamp(26px,2.6vw,44px);color:var(--b)}
+.przy svg{width:clamp(90px,8vw,150px);height:14px}
+/* naglowek */
+.top{position:fixed;inset:0 0 auto;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:26px}
+.logo{display:block;flex:none;color:var(--b);line-height:0}
+.logo svg{height:46px;width:auto}
+.menu{display:flex;gap:clamp(18px,2.1vw,44px);margin-left:auto;align-items:center}
+.menu a{text-decoration:none;font-weight:600;font-size:17px;color:var(--ink);padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{color:var(--b)}
+.menu a.on{color:var(--b);border-color:var(--b)}
+.top .tel{font-weight:600;font-size:18px;text-decoration:none;color:var(--b);white-space:nowrap}
+.top .btn{min-height:46px;padding:0 16px 0 20px;font-size:16px}
+.burger{display:none}
+/* hero */
+.hero{position:relative;margin-top:var(--hh);min-height:calc(100svh - var(--hh));display:flex;flex-direction:column;color:#fff;background:#03325C;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:60% 50%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(1,54,100,.95) 0,rgba(1,78,140,.86) 30%,rgba(1,104,179,.42) 58%,rgba(1,104,179,0) 80%),linear-gradient(0deg,rgba(2,30,58,.78) 0,rgba(2,30,58,0) 30%)}
+.hero .in{position:relative;z-index:2;flex:1 0 auto;display:flex;align-items:center;padding:clamp(40px,7vh,100px) 0 clamp(28px,4vh,56px)}
+.hero .txt{max-width:min(1060px,56vw)}
+.hero p.l{margin-top:24px;font-size:clamp(18px,.55vw + 15.5px,24px);line-height:1.5;color:#E3EEF8;max-width:48ch}
+.hero .cta{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
+.hero .inf{font-size:17px;color:#D3E3F2}
+.hero .inf a{color:#fff;font-weight:600;text-decoration:none;white-space:nowrap}
+/* pasek uslug w hero: piec wezlow na jednej linii */
+.pas{position:relative;z-index:2;padding:0 0 clamp(26px,3.6vh,46px)}
+.pas ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);position:relative}
+.pas ol::before{content:"";position:absolute;left:0;right:0;top:8px;height:2px;background:rgba(255,255,255,.55)}
+.pas li{position:relative}
+.pas a{display:block;padding-top:30px;text-decoration:none;font-weight:600;font-size:clamp(16px,.35vw + 14px,20px);color:#fff}
+.pas a::before{content:"";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;border:3px solid #fff;background:#0168B3;transition:background .2s}
+.pas a:hover::before{background:#fff}
+/* uslugi - trasa kabla */
+.hd{display:grid;grid-template-columns:1fr 1fr;gap:22px clamp(32px,5vw,110px);align-items:end}
+.tr{list-style:none;margin:clamp(44px,5vw,84px) 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0 clamp(18px,1.7vw,34px);position:relative}
+.tr::before{content:"";position:absolute;left:0;right:0;top:10px;height:2px;background:var(--b)}
+.tr li{position:relative;padding-top:44px;min-width:0}
+.tr li::before{content:"";position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;border:3px solid var(--b);background:#fff}
+.tr .ph{aspect-ratio:4/3;overflow:hidden;background:#DCE3EC}
+.tr .ph img{width:100%;height:100%;object-fit:cover}
+.tr .ph.biel{background:#fff;border:1px solid var(--line)}
+.tr .ph.biel img{object-fit:contain;padding:6%}
+.tr h3{margin-top:22px}
+.tr p{margin-top:10px;color:var(--mut)}
+.tr ul{margin:12px 0 0;padding:0;list-style:none;font-size:.94em}
+.tr ul li{padding:6px 0 6px 0;border-top:1px solid var(--line)}
+.tr ul li::before{display:none}
+.marki{margin-top:clamp(48px,5vw,90px);padding-top:28px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:baseline;gap:10px clamp(22px,2.6vw,52px)}
+.marki p{color:var(--mut);font-size:.95em;flex-basis:100%}
+.marki span{font-family:BSC,"BSC fb",sans-serif;font-weight:600;font-size:clamp(24px,1.2vw + 16px,40px);color:#24364C;letter-spacing:.02em}
+/* realizacje - ciemna */
+.dk{background:var(--deep);color:#DCE8F4}
+.dk h2{color:#fff}
+.dk .lead{color:#B9CEE3}
+.dk .przy{color:#5FA9E6}
+.hrow{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.hrow>div{max-width:900px}
+.hrow .lead{margin-top:18px}
+.nav{display:none;gap:10px}
+.nav button{width:52px;height:52px;border:1.5px solid rgba(255,255,255,.6);border-radius:50%;background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center}
+.nav button:hover{background:#fff;color:var(--deep)}
+.nav button svg{width:12px;height:18px}
+.nav button[data-k="-1"] svg{transform:scaleX(-1)}
+.tor{margin-top:clamp(32px,3.4vw,56px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,1.6vw,32px)}
+.tor figure{margin:0;min-width:0}
+.tor button{all:unset;display:block;width:100%;cursor:zoom-in;aspect-ratio:4/3;overflow:hidden;background:#0B3A66}
+.tor button img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.tor button:hover img{transform:scale(1.03)}
+.tor button:focus-visible{outline:3px solid #7FB8E6;outline-offset:2px}
+.tor figcaption{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2);position:relative}
+.tor figcaption::before{content:"";position:absolute;left:0;top:-7px;width:12px;height:12px;border-radius:50%;background:var(--deep);border:2px solid #5FA9E6}
+.tor h3{color:#fff;font-size:clamp(21px,.5vw + 17px,27px)}
+.tor .rk{display:block;margin-top:6px;font-size:15px;color:#8FB7DD;font-weight:600}
+.tor p{margin-top:8px;color:#C6D7E8;font-size:.95em}
+/* firma */
+.fm{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(32px,5vw,110px);align-items:center}
+.fm .tx p{color:var(--mut)}
+.fm .tx p+p{margin-top:16px}
+.fm .tx .lead{margin-top:22px;color:var(--ink)}
+.fm .ph{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(10px,1vw,18px);align-items:end}
+.fm .ph img{width:100%;object-fit:cover}
+.fm .ph img:first-child{aspect-ratio:4/3}
+.fm .ph img:last-child{aspect-ratio:4/5}
+/* opinie */
+.op{margin-top:clamp(36px,4vw,64px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3vw,64px)}
+.op figure{margin:0;padding-top:26px;border-top:2px solid var(--b);position:relative}
+.op figure::before{content:"";position:absolute;left:0;top:-10px;width:18px;height:18px;border-radius:50%;background:var(--g);border:3px solid var(--b)}
+.op blockquote{margin:0;font-size:clamp(18px,.4vw + 16px,22px);line-height:1.5;color:var(--ink)}
+.op figcaption{margin-top:18px;font-size:15.5px;color:var(--mut)}
+.op figcaption b{display:block;color:var(--ink);font-weight:600;font-size:16.5px}
+/* szkolenia */
+.sz{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,110px);align-items:start}
+.sz ul{margin:0;padding:0;list-style:none}
+.sz li{padding:16px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(150px,.6fr) 1fr;gap:16px}
+.sz li b{font-weight:600}
+.sz li span{color:var(--mut)}
+.sz a{color:var(--b);font-weight:600}
+/* kontakt */
+.kt{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,4vw,90px);align-items:start}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+label{display:grid;gap:6px;font-size:15.5px;font-weight:600;color:var(--ink)}
+label.w{grid-column:1/-1}
+input,textarea,select{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1.5px solid #C3CCD8;border-radius:2px;padding:13px 14px;width:100%}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--b) 50%),linear-gradient(135deg,var(--b) 50%,transparent 50%);background-position:calc(100% - 20px) 55%,calc(100% - 14px) 55%;background-size:6px 6px;background-repeat:no-repeat}
+textarea{min-height:140px;resize:vertical}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--b);box-shadow:0 0 0 3px rgba(1,104,179,.18)}
+form .btn{justify-self:start}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:#C62828}
+.msg{grid-column:1/-1;padding:16px 18px;background:#fff;border-left:4px solid var(--b);color:var(--ink)}
+.msg[hidden]{display:none}
+.note{grid-column:1/-1;font-size:14px;color:var(--mut)}
+.dane{display:grid;grid-template-columns:1fr 1fr;gap:22px 28px;margin-top:6px}
+.dane h3{font-size:20px}
+.dane p{margin-top:6px;color:var(--mut)}
+.dane a{color:var(--mut);text-decoration:none}
+.dane a:hover{color:var(--b)}
+.dane .big a{color:var(--b);font-weight:600;font-size:1.15em}
+.mapa{margin-top:28px;aspect-ratio:16/10;background:#DCE3EC}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+/* stopka */
+footer{background:#fff;border-top:1px solid var(--line);padding:48px 0 28px;font-size:15.5px;color:var(--mut)}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
+footer .logo svg{height:50px}
+footer h4{margin:0 0 10px;font-size:16px;color:var(--ink)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--b)}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.fb{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;align-items:center}
+.fb .cp{font-size:.875em}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(3,22,42,.95);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:min(92vw,1200px);max-height:80vh;width:auto;height:auto}
+.lb p{position:absolute;left:0;right:0;bottom:22px;text-align:center;color:#fff;font-size:16px;padding:0 70px}
+.lb button{position:absolute;width:52px;height:52px;border:1.5px solid rgba(255,255,255,.6);border-radius:50%;background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center}
+.lb .x{top:16px;right:16px;font-size:28px;line-height:1}
+.lb .pv{left:16px;top:50%;transform:translateY(-50%)}
+.lb .nx{right:16px;top:50%;transform:translateY(-50%)}
+.lb .pv svg{transform:scaleX(-1)}
+.lb button svg{width:12px;height:18px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+@media (min-width:1800px){:root{--hh:84px}.logo svg{height:56px}.menu a{font-size:19px}.top .tel{font-size:20px}.top .btn{min-height:52px;font-size:17px}}
+@media (max-width:1499px) and (min-width:1101px){.tr{grid-template-columns:repeat(5,minmax(0,1fr))}.tr ul{display:none}}
+@media (max-width:1100px){.menu,.top .tel{display:none}
+.burger{display:grid;place-items:center;margin-left:auto;width:48px;height:48px;border:1.5px solid var(--line);border-radius:2px;background:#fff;cursor:pointer}
+.burger i,.burger i::before,.burger i::after{display:block;width:22px;height:2px;background:var(--b);position:relative;content:"";transition:transform .2s}
+.burger i::before{position:absolute;top:-7px}.burger i::after{position:absolute;top:7px}
+.top.open .burger i{background:transparent}.top.open .burger i::before{transform:translateY(7px) rotate(45deg)}.top.open .burger i::after{transform:translateY(-7px) rotate(-45deg)}
+.top.open .menu{display:flex;position:fixed;top:var(--hh);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:8px 4vw 24px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(6,44,82,.14)}
+.top.open .menu a{font-size:20px;padding:14px 0;border-bottom:1px solid var(--line)}
+.top.open .menu a.on{border-bottom-color:var(--b)}
+.top.open .menu .mtel{display:block;color:var(--b)}
+.top .btn{display:none}
+.hero .txt{max-width:min(760px,80vw)}
+/* trasa pionowo */
+.tr{grid-template-columns:1fr;gap:0}
+.tr::before{left:10px;right:auto;top:0;bottom:0;width:2px;height:auto}
+.tr>li{padding:0 0 clamp(36px,5vw,56px) 52px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:8px 32px;align-items:start}
+.tr>li:last-child{padding-bottom:0}
+.tr>li .ph{grid-row:1/span 4}
+.tr h3{margin-top:0}
+.tor{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc((100% - 2*var(--gp))/2.4);--gp:clamp(14px,1.4vw,26px);column-gap:var(--gp);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;padding:8px 0 4px}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{scroll-snap-type:none;cursor:grabbing}
+.tor figure{scroll-snap-align:start}
+.nav{display:flex}
+.op{grid-template-columns:1fr;gap:40px}
+.fm,.kt,.sz{grid-template-columns:1fr}
+}
+.menu .mtel{display:none}
+@media (max-width:760px){:root{--hh:62px}
+.logo svg{height:40px}
+.hero picture img{object-position:50% 30%}
+.hero::before{background:linear-gradient(0deg,rgba(1,40,76,.97) 0,rgba(1,52,96,.9) 46%,rgba(1,80,145,.35) 74%,rgba(1,104,179,.05) 100%)}
+.hero .in{align-items:flex-end;padding:28px 0 30px}
+.hero .txt{max-width:none}
+.hero p.l{margin-top:16px;font-size:17px}
+.hero .cta{margin-top:26px;gap:14px}
+.hero .btn{width:100%;justify-content:center}
+.hero .inf{font-size:16px}
+.pas{display:none}
+.hd{grid-template-columns:1fr}
+.tr>li{grid-template-columns:1fr;padding-left:40px}
+.tr>li .ph{grid-row:auto}
+.tr h3{margin-top:14px}
+.tor{grid-auto-columns:82%}
+form{grid-template-columns:1fr}
+.dane{grid-template-columns:1fr 1fr}
+.fg{grid-template-columns:1fr 1fr}
+.fg>div:first-child{grid-column:1/-1}
+.sz li{grid-template-columns:1fr;gap:4px}
+}
+@media (max-width:400px){.dane{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="logo" viewBox="0 0 324 146"><path fill="currentColor" fill-rule="evenodd" d="M47.9 124.2 47.4 124.8 47.4 142.2 47.8 142.8 48.4 143.0 56.1 143.0 56.8 142.4 56.8 141.6 56.2 141.1 50.2 141.0 49.8 140.8 49.2 140.0 49.1 124.9 48.9 124.4ZM287.4 124.2 287.0 125.0 287.1 142.5 287.9 143.0 288.8 142.5 289.0 136.5 290.9 134.2 291.6 134.0 292.9 135.6 294.1 138.2 294.9 139.1 296.5 142.1 297.6 143.0 298.9 142.8 299.1 142.2 298.5 141.0 296.9 138.5 296.6 137.6 293.2 132.4 293.2 131.5 293.8 130.6 296.5 127.6 298.6 124.5 298.2 124.1 296.9 124.1 296.4 124.4 294.4 126.6 290.4 131.9 289.6 132.6 289.2 132.6 288.9 132.1 288.8 124.6 288.2 124.1ZM264.1 124.1 263.6 124.5 264.1 125.9 265.0 127.2 266.4 130.4 267.0 131.1 269.0 134.9 269.1 142.2 269.6 142.9 270.2 142.9 270.9 142.1 270.9 135.6 271.1 134.8 273.0 131.2 273.6 130.6 274.1 129.4 275.6 127.1 275.9 126.2 276.6 125.1 276.6 124.4 276.2 124.1 275.4 124.1 274.5 124.6 273.2 126.9 273.0 127.8 272.1 129.0 271.1 131.5 270.2 132.1 269.4 131.2 268.6 129.5 267.9 128.5 267.5 127.4 266.8 126.5 265.6 124.4 265.2 124.1ZM227.5 124.1 226.2 125.8 226.0 127.6 225.1 129.4 225.0 130.6 224.2 132.2 224.0 133.9 223.2 135.8 223.0 137.2 222.2 139.1 221.4 142.5 222.1 143.0 223.2 142.4 223.6 141.6 224.0 139.5 224.8 138.1 225.4 137.5 230.2 137.4 231.0 137.6 231.9 138.5 232.1 140.2 233.2 142.6 233.9 143.0 234.6 142.9 235.2 142.2 234.5 139.6 233.9 138.2 233.6 136.6 232.9 135.4 232.6 133.9 232.0 133.0 231.8 131.2 230.9 129.6 230.8 128.5 230.0 127.0 229.5 125.0 228.9 124.2ZM228.5 127.9 229.0 128.5 229.2 130.1 230.4 133.8 230.4 134.6 229.6 135.1 226.4 135.1 225.9 134.6 225.9 133.5 226.6 132.0 226.9 130.4 227.8 128.4ZM104.0 124.2 103.6 124.8 103.8 142.4 104.1 142.8 104.8 142.9 105.4 142.4 105.5 141.9 105.4 130.1 105.6 129.8 106.1 129.8 106.9 130.4 107.2 131.5 109.0 134.1 113.1 142.2 114.2 143.0 115.4 142.9 115.8 142.2 115.6 124.4 115.2 124.1 114.5 124.1 114.0 124.8 114.0 137.4 113.4 138.0 112.0 136.0 111.6 134.9 110.9 133.9 106.6 125.5 105.4 124.1ZM90.8 124.1 90.2 124.6 90.1 142.1 90.6 142.9 91.1 143.0 91.8 142.6 92.0 142.0 92.0 125.1 91.6 124.2ZM314.2 124.1 313.4 125.0 312.2 128.4 312.0 130.0 311.4 131.2 310.9 133.4 310.1 134.8 310.0 136.2 309.2 137.6 309.0 139.2 308.2 140.8 308.1 142.5 308.6 143.0 309.2 143.0 309.8 142.6 310.5 141.2 311.0 138.9 312.0 137.6 312.8 137.4 317.1 137.4 317.8 137.6 318.5 138.5 319.9 142.4 320.6 143.0 321.2 143.0 321.8 142.4 321.6 141.1 321.0 140.0 320.8 138.8 319.9 136.6 318.6 132.0 317.9 130.2 317.8 129.1 316.9 127.2 316.6 125.8 315.5 124.1ZM314.5 127.5 314.9 127.8 315.9 129.8 316.1 131.6 317.1 133.8 317.0 134.8 316.2 135.2 313.1 135.1 312.4 134.2 312.9 132.2 313.8 130.1 314.0 128.0ZM243.1 124.1 242.4 124.8 242.4 125.2 242.9 125.8 244.6 126.0 246.2 125.9 247.0 126.1 247.5 126.9 247.5 142.0 248.0 142.8 248.9 142.9 249.5 142.2 249.6 126.8 250.4 126.0 254.0 125.9 254.5 125.6 254.8 124.9 254.1 124.1 252.2 124.0ZM211.5 124.4 210.1 124.0 208.9 124.4 208.5 125.0 208.0 127.5 207.2 129.2 207.0 130.9 206.2 132.5 206.0 134.6 205.1 136.4 205.0 138.4 204.5 139.0 203.9 138.8 203.4 137.8 201.0 129.2 200.5 126.6 199.6 124.4 199.2 124.1 197.2 124.1 196.6 124.5 196.5 142.2 196.8 142.6 197.2 142.9 198.2 142.9 198.8 141.9 198.6 132.0 198.8 130.4 199.1 129.6 199.5 129.6 200.0 130.5 200.1 132.2 202.0 138.5 202.4 140.8 203.0 142.4 203.8 143.0 204.6 142.9 205.6 141.6 205.9 139.8 206.5 138.4 206.8 136.6 207.5 134.6 208.1 131.5 208.8 130.5 209.4 130.9 209.6 132.4 209.5 141.9 209.6 142.4 210.4 142.9 211.1 142.9 211.5 142.6 211.8 142.0 211.8 128.5ZM173.5 124.2 173.2 124.6 173.4 142.5 173.8 142.9 174.5 142.9 175.0 142.0 175.1 135.2 176.0 134.6 178.2 134.6 179.8 135.2 181.0 136.8 182.2 139.5 183.0 140.5 183.4 141.6 184.2 142.8 184.6 143.0 186.1 142.8 186.2 142.1 185.6 140.6 183.9 137.8 183.5 136.8 182.0 134.9 182.0 134.4 182.5 133.9 183.5 133.5 184.8 132.2 185.6 130.5 185.6 128.0 184.6 125.6 183.2 124.5 182.2 124.1 174.4 124.0ZM175.1 126.5 175.6 126.0 177.0 125.8 179.5 125.8 181.6 126.1 183.0 127.2 183.2 127.9 183.4 129.8 182.9 131.1 182.1 131.9 180.5 132.5 176.8 132.6 175.6 132.4 175.0 131.5ZM137.4 124.2 134.5 124.0 128.9 124.0 127.9 124.1 127.2 124.6 127.1 141.9 127.5 142.8 129.0 142.8 129.5 142.0 129.4 139.9 129.6 135.0 130.4 134.4 135.9 134.2 136.4 134.0 136.6 133.5 136.5 132.8 136.0 132.4 130.4 132.2 129.8 131.9 129.4 131.0 129.4 127.4 129.8 126.4 130.5 125.9 137.0 125.9 137.6 125.4 137.6 124.5ZM67.9 124.2 67.5 124.6 67.4 142.1 67.6 142.6 68.4 143.0 78.5 142.9 78.9 142.0 78.4 141.1 70.4 141.0 69.5 140.2 69.2 136.1 69.4 135.2 69.9 134.5 70.8 134.1 77.0 134.2 77.8 133.6 77.8 132.6 77.4 132.2 70.9 132.2 70.0 132.0 69.4 131.2 69.2 127.8 69.6 126.5 70.2 126.0 78.1 125.9 78.8 125.2 78.6 124.5 78.1 124.1 68.9 124.0ZM25.6 124.1 25.1 124.8 25.2 142.6 25.9 143.0 36.4 142.9 36.8 142.4 36.8 141.8 36.1 141.1 28.6 141.1 27.5 140.8 27.0 139.9 26.9 138.0 27.0 135.4 27.8 134.4 30.0 134.1 35.0 134.1 35.6 133.6 35.6 132.8 35.1 132.2 28.6 132.2 27.6 132.0 27.0 131.1 26.9 127.6 27.2 126.5 28.6 125.9 35.5 125.9 36.2 125.2 36.1 124.5 35.0 124.0ZM3.8 124.0 3.1 124.2 2.9 124.6 2.9 125.2 3.4 125.9 6.5 125.9 7.4 126.1 7.9 126.8 8.0 142.2 8.6 143.0 9.4 143.0 9.9 142.2 10.0 126.6 10.5 126.1 11.4 125.9 14.2 125.9 14.8 125.5 14.9 124.6 14.4 124.1 12.9 124.0ZM154.6 123.6 152.2 124.2 150.6 125.4 149.4 126.9 148.1 129.1 147.8 132.9 147.9 135.5 148.2 138.1 148.9 138.9 149.4 140.1 150.6 141.6 151.8 142.5 153.9 143.4 156.1 143.5 158.8 142.5 160.6 140.6 161.6 139.1 161.9 137.8 162.6 136.0 162.6 131.0 161.5 127.8 159.8 125.4 158.1 124.2 156.4 123.8ZM154.4 125.6 156.5 125.8 158.5 127.0 159.9 129.0 160.5 131.8 160.5 135.4 160.0 138.0 159.1 139.4 157.9 140.6 156.1 141.4 153.8 141.2 152.4 140.5 151.0 139.0 149.9 136.1 149.9 131.4 150.8 128.6 152.4 126.6 153.2 126.0ZM297.6 18.9 296.9 19.2 296.6 19.9 296.8 33.8 296.2 34.8 295.6 35.0 294.5 35.0 293.6 35.5 293.6 43.2 294.4 44.4 295.8 44.5 296.2 44.8 296.8 45.5 296.8 88.1 297.1 90.6 298.0 92.4 298.4 93.8 300.2 96.6 301.4 97.9 303.5 99.6 305.6 100.8 307.8 101.6 310.8 102.2 321.2 102.4 321.9 101.9 322.1 101.1 322.0 93.5 321.5 93.0 321.0 92.9 312.6 92.9 311.0 91.8 309.9 89.9 309.6 88.0 309.6 45.4 310.1 44.6 310.9 44.4 321.5 44.4 321.9 44.0 322.1 42.8 322.1 35.8 321.4 35.0 310.5 35.0 309.8 34.5 309.6 19.6 309.2 19.1 308.1 18.9ZM250.4 19.0 249.8 19.9 249.9 101.6 250.8 102.4 261.2 102.4 262.0 102.1 262.5 101.4 262.5 38.6 263.0 37.5 264.0 36.9 265.5 36.6 269.2 36.6 270.9 37.0 272.4 37.9 273.9 39.4 275.0 42.0 275.1 101.8 275.6 102.4 287.0 102.4 287.5 102.1 287.8 101.6 287.8 39.4 286.8 36.2 284.8 33.0 283.0 31.2 281.5 30.2 279.0 29.1 276.4 28.5 268.8 28.4 264.8 29.1 263.8 29.6 263.1 29.6 262.6 29.0 262.5 19.5 262.1 19.1 261.2 18.9ZM242.5 18.9 231.9 18.9 231.2 19.1 230.5 20.0 229.4 19.9 228.0 19.1 225.0 18.9 218.0 18.9 215.1 19.1 212.4 20.4 209.8 22.2 208.4 23.8 206.2 27.8 205.9 30.6 205.9 74.4 206.2 77.5 207.2 79.6 208.9 82.0 211.6 84.5 213.8 85.5 217.1 86.4 225.8 86.4 228.8 85.8 230.1 85.1 230.6 85.2 231.0 85.8 230.9 88.6 229.9 91.2 228.1 92.8 210.4 92.9 209.4 93.1 209.0 93.8 209.0 101.2 209.6 102.2 228.4 102.4 232.6 101.6 234.9 100.8 236.6 99.8 239.2 97.8 240.6 96.1 242.5 92.9 243.8 88.1 243.8 19.6 243.2 19.0ZM226.9 26.9 228.8 27.1 230.5 27.9 230.9 28.2 231.1 29.1 231.1 76.2 230.8 77.1 229.4 78.0 227.5 78.2 224.2 78.2 222.6 77.9 221.2 77.1 219.9 75.8 218.8 73.6 218.6 32.8 218.8 31.5 219.9 29.5 221.5 28.0 224.0 27.0ZM187.9 19.0 187.5 19.1 187.1 19.8 187.1 101.1 187.6 102.1 188.5 102.4 198.9 102.4 199.6 101.9 199.9 101.1 199.9 19.8 199.4 19.0 198.9 18.9ZM169.5 18.9 168.6 19.1 168.2 19.8 168.2 101.2 168.5 101.9 169.4 102.4 180.2 102.4 181.0 101.8 181.2 101.1 181.2 20.0 181.1 19.5 180.1 18.9ZM137.8 19.0 137.1 19.6 137.1 33.9 136.6 34.8 135.9 35.0 134.6 35.0 134.0 35.8 134.1 43.9 134.6 44.5 136.5 44.6 137.1 45.5 137.1 88.4 137.4 89.8 138.2 92.6 140.4 96.4 142.2 98.4 145.2 100.4 148.2 101.6 152.2 102.4 162.1 102.2 162.6 101.8 162.8 101.2 162.6 93.4 162.1 93.0 152.8 92.8 151.1 91.4 149.9 88.4 149.8 48.4 149.9 45.2 150.6 44.5 162.1 44.4 162.8 43.2 162.8 35.6 162.0 35.0 151.0 35.0 150.1 34.6 149.8 33.4 149.9 21.8 149.8 19.4 149.4 19.0ZM102.6 19.0 101.8 19.1 99.2 20.1 96.9 21.5 94.2 23.8 92.2 26.2 91.2 28.4 90.2 31.9 90.2 40.8 90.5 43.1 91.1 45.4 91.2 46.9 92.0 48.8 92.2 50.1 92.9 50.9 93.4 52.4 95.2 55.4 98.1 59.1 106.8 67.0 110.6 71.0 113.9 76.1 114.1 77.5 114.9 78.9 115.1 80.1 115.4 84.1 115.1 88.9 114.0 91.6 112.0 93.6 110.9 94.1 108.0 94.2 106.5 93.9 105.5 93.1 104.1 91.5 103.0 88.6 102.8 86.6 102.8 77.8 102.5 77.2 101.9 77.0 96.9 76.9 91.0 77.0 90.2 77.5 90.2 89.4 91.4 93.1 93.4 96.5 95.8 98.9 97.6 100.2 101.1 101.8 104.5 102.4 113.6 102.4 117.9 101.5 120.2 100.5 121.8 99.5 124.5 96.8 126.5 93.6 126.9 92.4 127.8 90.8 128.0 88.1 127.8 77.4 126.9 75.1 126.8 73.5 126.0 72.1 125.6 70.6 123.6 66.6 121.4 63.5 118.1 60.1 109.9 52.6 107.9 50.4 104.9 46.2 103.6 43.2 103.0 40.5 102.8 38.0 102.8 34.6 103.0 32.6 104.0 29.9 104.8 28.9 106.4 27.5 107.5 27.0 110.5 27.0 112.5 27.9 113.9 29.4 114.1 30.2 115.0 31.6 115.4 34.8 115.4 43.2 115.6 43.8 116.5 44.2 127.0 44.4 127.9 43.8 128.1 43.1 128.1 33.6 127.8 30.4 126.9 28.9 126.5 27.5 124.6 24.5 122.4 22.2 119.0 20.1 118.2 20.0 116.5 19.1 115.2 19.0ZM57.6 19.1 56.4 19.9 55.0 20.2 53.1 21.4 50.2 23.8 48.4 26.4 47.2 28.8 46.2 32.6 46.2 88.9 47.2 92.4 49.2 96.2 51.4 98.6 54.0 100.4 56.8 101.6 60.8 102.4 70.8 102.2 73.2 101.8 76.0 100.6 79.4 98.1 81.6 95.4 83.6 91.0 84.1 87.4 84.0 68.2 83.1 67.5 72.5 67.5 71.4 68.2 71.4 86.4 71.0 89.5 70.0 91.8 68.1 93.6 66.4 94.2 62.9 94.0 61.8 93.2 60.0 91.1 58.9 86.8 59.0 61.8 59.2 61.2 59.9 60.9 83.2 60.9 83.8 60.6 84.1 59.9 84.1 33.8 83.8 30.8 82.6 27.6 80.8 24.5 78.6 22.4 75.1 20.1 74.4 20.0 72.6 19.1 69.5 18.9 62.0 18.9ZM63.2 27.1 66.8 27.0 68.4 27.8 69.8 29.1 71.0 31.8 71.4 35.0 71.4 50.1 71.1 50.8 70.4 51.2 59.9 51.2 59.0 50.6 59.0 33.4 59.9 30.4 60.8 29.0 61.9 27.9ZM2.8 18.2 2.1 18.8 1.9 19.6 2.0 102.1 2.4 102.6 2.9 102.8 14.4 102.8 15.8 101.8 16.8 101.8 17.5 102.1 20.6 102.8 28.4 102.8 29.5 102.4 30.5 102.4 32.9 101.6 35.2 100.2 37.1 98.6 38.5 97.0 39.5 95.2 40.5 91.0 40.5 39.9 39.6 36.0 37.2 32.1 34.8 30.2 32.9 29.2 31.4 28.8 28.4 28.1 20.4 28.1 18.0 28.5 16.9 29.0 15.8 29.0 15.2 28.4 15.2 19.4 15.0 18.6 14.5 18.2ZM18.0 36.9 21.8 36.9 24.6 38.0 25.8 39.0 26.8 40.5 27.2 42.2 27.2 88.6 26.6 90.5 25.1 92.4 23.5 93.4 21.4 94.0 17.4 93.9 16.2 93.4 15.2 92.1 15.2 38.9 16.0 37.5 16.6 37.1ZM193.1 2.2 190.2 3.2 188.5 5.0 187.4 7.6 187.4 10.0 188.1 12.1 189.5 13.8 191.5 14.9 192.5 15.1 194.5 15.1 196.9 14.4 198.6 12.9 199.5 11.6 200.0 8.9 199.6 6.4 198.6 4.8 197.1 3.4 194.8 2.4Z"/></symbol>
+<symbol id="lw" viewBox="0 0 34 14"><path d="M0 7h22" stroke="currentColor" stroke-width="2.2"/><circle cx="27" cy="7" r="4.6" fill="none" stroke="currentColor" stroke-width="2.4"/></symbol>
+<symbol id="przy" viewBox="0 0 150 14"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 7h138" stroke="currentColor" stroke-width="2"/></symbol>
+<symbol id="gt" viewBox="0 0 12 18"><path d="M2 2l8 7-8 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+<header class="top" id="top">
+<div class="wrap">
+<a class="logo" href="#" aria-label="Bestlight Teleinformatyka - strona główna"><svg viewBox="0 0 324 146" role="img" aria-label="bestlight teleinformatyka"><use href="#logo"/></svg></a>
+<nav class="menu" id="menu" aria-label="Menu">
+<a href="#uslugi">Usługi</a>
+<a href="#realizacje">Realizacje</a>
+<a href="#firma">O firmie</a>
+<a href="#szkolenia">Szkolenia</a>
+<a href="#kontakt">Kontakt</a>
+<a class="mtel" href="tel:+48501704289">tel. 501 704 289</a>
+</nav>
+<a class="tel" href="tel:+48501704289">501 704 289</a>
+<a class="btn" href="#kontakt">Zapytanie<svg class="lw" aria-hidden="true"><use href="#lw"/></svg></a>
+<button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<picture>
+<source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w" sizes="100vw">
+<img src="img/hero-1440.webp" srcset="img/hero-1024.webp 1024w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" sizes="100vw" width="1920" height="971" alt="Przełącznica światłowodowa z niebieskimi i zielonymi złączami oraz żółtymi patchcordami" fetchpriority="high">
+</picture>
+<div class="in">
+<div class="wrap">
+<div class="txt">
+<h1>Alarm, monitoring, elektryka i sieci w jednych rękach</h1>
+<p class="l">Zaczynaliśmy w 2005 roku jako dostawca internetu. Dziś w Bielsku Podlaskim, Białymstoku i okolicy projektujemy i montujemy alarmy, kamery, instalacje elektryczne, sieci komputerowe i automatykę bram.</p>
+<div class="cta">
+<a class="btn w" href="#kontakt">Opisz swój obiekt<svg class="lw" aria-hidden="true"><use href="#lw"/></svg></a>
+<p class="inf">lub zadzwoń: <a href="tel:+48501704289">501 704 289</a></p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pas" aria-label="Usługi">
+<div class="wrap">
+<ol>
+<li><a href="#alarmy">Instalacje alarmowe</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#elektryka">Instalacje elektryczne</a></li>
+<li><a href="#sieci">Sieci IT</a></li>
+<li><a href="#bramy">Automatyka bramowa</a></li>
+</ol>
+</div>
+</nav>
+</section>
+
+<section class="sec" id="uslugi">
+<div class="wrap">
+<div class="przy"><svg aria-hidden="true"><use href="#przy"/></svg></div>
+<div class="hd">
+<h2>Pięć instalacji, jedna firma od projektu do serwisu</h2>
+<p class="lead">Alarm potrzebuje zasilania, kamera sieci, a brama sterowania. Robimy to wszystko sami, więc instalacje w domu, firmie czy zakładzie od początku do siebie pasują.</p>
+</div>
+<ol class="tr">
+<li id="alarmy">
+<div class="ph"><img src="img/alarm-400.webp" srcset="img/alarm-400.webp 400w, img/alarm-800.webp 600w" sizes="(max-width:760px) 88vw, (max-width:1100px) 42vw, 18vw" width="600" height="360" loading="lazy" alt="Montaż czujki alarmowej na suficie"></div>
+<h3>Instalacje alarmowe</h3>
+<p>Alarmy przewodowe i bezprzewodowe dla domów, firm i obiektów publicznych.</p>
+<ul><li>dobór i montaż centrali, np. SATEL, GENEVO</li><li>montaż urządzeń kupionych u nas</li><li>ochrona osób i mienia</li></ul>
+</li>
+<li id="monitoring">
+<div class="ph"><img src="img/monitoring-400.webp" srcset="img/monitoring-400.webp 400w, img/monitoring-800.webp 600w" sizes="(max-width:760px) 88vw, (max-width:1100px) 42vw, 18vw" width="600" height="360" loading="lazy" alt="Kamera kopułkowa systemu monitoringu"></div>
+<h3>Monitoring</h3>
+<p>Systemy wizyjne analogowe i IP dla posesji, firm i zakładów pracy.</p>
+<ul><li>projekt i dobór kamer</li><li>dostawa, montaż i konfiguracja</li><li>serwis i konserwacja</li></ul>
+</li>
+<li id="elektryka">
+<div class="ph"><img src="img/elektryka-400.webp" srcset="img/elektryka-400.webp 400w, img/elektryka-800.webp 798w" sizes="(max-width:760px) 88vw, (max-width:1100px) 42vw, 18vw" width="798" height="481" loading="lazy" alt="Listwy zaciskowe w rozdzielnicy elektrycznej"></div>
+<h3>Instalacje elektryczne</h3>
+<p>Projekt i wykonanie w mieszkaniach, domach, sklepach i zakładach przemysłowych.</p>
+<ul><li>projekt instalacji elektrycznej</li><li>pełen zakres prac instalacyjnych</li><li>zasilanie alarmów i kamer</li></ul>
+</li>
+<li id="sieci">
+<div class="ph"><img src="img/sieci-400.webp" srcset="img/sieci-400.webp 400w, img/sieci-800.webp 800w" sizes="(max-width:760px) 88vw, (max-width:1100px) 42vw, 18vw" width="800" height="600" loading="lazy" alt="Złącza światłowodowe w przełącznicy"></div>
+<h3>Sieci IT</h3>
+<p>Projekt i budowa sieci komputerowych, także łączenie oddziałów firmy w jeden system.</p>
+<ul><li>sieci kablowe i radiowe, WiFi</li><li>kopie zapasowe i archiwizacja danych</li><li>doradztwo przy wyborze sprzętu</li></ul>
+</li>
+<li id="bramy">
+<div class="ph biel"><img src="img/brama-400.webp" width="400" height="318" loading="lazy" alt="Napęd do bramy przesuwnej CAME BX z pilotami"></div>
+<h3>Automatyka bramowa</h3>
+<p>Napędy do bram wjazdowych i garażowych CAME i NICE: sprzedaż, montaż i serwis.</p>
+<ul><li>dobór napędu do bramy</li><li>montaż i uruchomienie</li><li>serwis automatyki</li></ul>
+</li>
+</ol>
+<div class="marki">
+<p>Montujemy sprzęt sprawdzonych producentów:</p>
+<span>SATEL</span><span>DAHUA</span><span>INTERNEC</span><span>BCS</span><span>CAME</span><span>NICE</span>
+</div>
+</div>
+</section>
+
+<section class="sec dk" id="realizacje">
+<div class="wrap">
+<div class="przy"><svg aria-hidden="true"><use href="#przy"/></svg></div>
+<div class="hrow">
+<div><h2>Obiekty, w których pracowaliśmy</h2>
+<p class="lead">Galeria handlowa, hotele i zakład mleczarski - od kamer i WiFi po instalacje dla systemów AV.</p></div>
+<div class="nav" data-nav="tor1"><button type="button" data-k="-1" aria-label="Poprzednie"><svg aria-hidden="true"><use href="#gt"/></svg></button><button type="button" data-k="1" aria-label="Następne"><svg aria-hidden="true"><use href="#gt"/></svg></button></div>
+</div>
+<div class="tor" id="tor1" data-tor>
+<figure><button type="button" data-full="img/jurowiecka-1200.webp"><img src="img/jurowiecka-600.webp" width="600" height="450" loading="lazy" alt="Galeria Jurowiecka w Białymstoku"></button><figcaption><h3>Galeria Jurowiecka</h3><span class="rk">2015 - systemy wizyjne</span><p>System telewizji dozorowej na rozwiązaniach UTC: instalacja i konfiguracja 155 kamer IP.</p></figcaption></figure>
+<figure><button type="button" data-full="img/natura-1200.webp"><img src="img/natura-600.webp" width="600" height="450" loading="lazy" alt="Hotel Natura Mazur w Warchałach"></button><figcaption><h3>Hotel Natura Mazur w Warchałach</h3><span class="rk">2015 - sieci IT</span><p>Projekt i wykonanie sieci WiFi z 64 access pointów 802.11b/g/n.</p></figcaption></figure>
+<figure><button type="button" data-full="img/bielmlek-1200.webp"><img src="img/bielmlek-600.webp" width="600" height="450" loading="lazy" alt="Centrum wizualizacji procesów w Bielmlek SM"></button><figcaption><h3>Bielmlek SM</h3><span class="rk">2014 - automatyka</span><p>Linia przesyłu sygnałów ze sterowników zakładu do centrum wizualizacji dla operatora.</p></figcaption></figure>
+<figure><button type="button" data-full="img/hilton-1200.webp"><img src="img/hilton-600.webp" width="600" height="450" loading="lazy" alt="DoubleTree by Hilton Kraków Hotel and Convention Center"></button><figcaption><h3>DoubleTree by Hilton Kraków</h3><span class="rk">2015 - instalacje elektryczne</span><p>Instalacja elektryczna i sygnałowa do zintegrowanego systemu AV i nagłośnienia.</p></figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="sec" id="firma">
+<div class="wrap fm">
+<div class="tx">
+<div class="przy"><svg aria-hidden="true"><use href="#przy"/></svg></div>
+<h2>Zaczęliśmy od internetu, dziś łączymy cały budynek</h2>
+<p class="lead">Bestlight powstał w 2005 roku jako dostawca internetu w Białymstoku i okolicy. Z kabli i anten wyrosła firma, która zajmuje się szeroko rozumianą elektryką i automatyką.</p>
+<p style="margin-top:20px">Budujemy sieci IT, wykonujemy instalacje alarmowe i elektryczne, montujemy monitoring dla właścicieli dużych firm, zakładów przemysłowych, osiedli i domów jednorodzinnych. Pracujemy w okolicy Bielska Podlaskiego i Białegostoku, a także w całym kraju.</p>
+<p>Sięgamy tylko po profesjonalny, sprawdzony osprzęt i doradzamy, co naprawdę jest potrzebne w danym obiekcie.</p>
+</div>
+<div class="ph">
+<img src="img/bielmlek-600.webp" srcset="img/bielmlek-600.webp 600w, img/bielmlek-1200.webp 1200w" sizes="(max-width:1100px) 52vw, 28vw" width="600" height="450" loading="lazy" alt="Monitory centrum wizualizacji procesów w zakładzie">
+<img src="img/elektryka-400.webp" srcset="img/elektryka-400.webp 400w, img/elektryka-800.webp 798w" sizes="(max-width:1100px) 40vw, 22vw" width="400" height="241" loading="lazy" alt="Okablowanie w rozdzielnicy">
+</div>
+</div>
+</section>
+
+<section class="sec g" id="opinie">
+<div class="wrap">
+<h2>Co mówią o nas klienci</h2>
+<div class="op">
+<figure><blockquote>Jako dyrektor szkoły pragnę w imieniu uczniów i nauczycieli podziękować firmie Bestlight za współpracę, docenić nie tylko profesjonalizm tej firmy, ale także otwarcie na potrzeby społeczności naszej szkoły i gminy Wyszki.</blockquote><figcaption><b>mgr Jan Falkowski</b>Dyrektor Szkoły, pspfalkow.pl</figcaption></figure>
+<figure><blockquote>Pracownicy Bestlight wykonali wszystkie prace związane z zamontowaniem potrzebnego sprzętu oraz poprowadzeniem łącz próbnych w ciągu kilku dni, co świadczy o wysokiej fachowości.</blockquote><figcaption><b>mgr Ryszard Anusiewicz</b>Sekretarz Powiatu, powiatbielski.pl</figcaption></figure>
+<figure><blockquote>Firma Bestlight wywiązała się ze wszystkich swoich obietnic odnośnie działania oraz funkcjonalności zainstalowanego systemu.</blockquote><figcaption><b>mgr Grażyna Tarasiuk</b>Vice-Prezes Zarządu, unibus.com.pl</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="sec" id="szkolenia">
+<div class="wrap sz">
+<div>
+<div class="przy"><svg aria-hidden="true"><use href="#przy"/></svg></div>
+<h2>Szkolenia i doradztwo</h2>
+<p class="lead" style="margin-top:20px">Dzielimy się wiedzą: prowadzimy szkolenia indywidualne i grupowe oraz usługi doradcze dla osób i firm z województwa podlaskiego, szczególnie z powiatu bielskiego.</p>
+</div>
+<ul>
+<li><b>Rejestr Instytucji Szkoleniowych</b><span>numer ewidencyjny 2.20/00063/2019</span></li>
+<li><b>Doradca zawodowy</b><span>analiza potrzeb i predyspozycji, plan rozwoju i szkoleń</span></li>
+<li><b>Kontakt</b><span><a href="mailto:szkolenia@bestlight.com.pl">szkolenia@bestlight.com.pl</a></span></li>
+</ul>
+</div>
+</section>
+
+<section class="sec g" id="kontakt">
+<div class="wrap kt">
+<div>
+<h2>Opisz swój obiekt</h2>
+<p class="lead" style="margin-top:18px">Napisz, co chcesz zabezpieczyć, zasilić albo połączyć. Odpowiemy z propozycją rozwiązania i terminem.</p>
+<form id="form" novalidate>
+<label>Imię i nazwisko<input name="n" autocomplete="name" required></label>
+<label>Telefon<input name="t" type="tel" autocomplete="tel"></label>
+<label>E-mail<input name="e" type="email" autocomplete="email" required></label>
+<label>Miejscowość<input name="m" autocomplete="address-level2"></label>
+<label class="w">Czego dotyczy zapytanie<select name="u"><option>Instalacja alarmowa</option><option>Monitoring</option><option>Instalacja elektryczna</option><option>Sieć IT</option><option>Automatyka bramowa</option><option>Szkolenia</option><option>Inne</option></select></label>
+<label class="w">Opis obiektu i potrzeb<textarea name="o" required></textarea></label>
+<button class="btn" type="submit">Wyślij zapytanie<svg class="lw" aria-hidden="true"><use href="#lw"/></svg></button>
+<p class="msg" id="msg" hidden role="status">Dziękujemy! Na podany e-mail wysłaliśmy potwierdzenie - jeśli go nie widać, zajrzyj do folderu Spam.</p>
+<p class="note">Podgląd: formularz pokazowy, wiadomość nie jest wysyłana.</p>
+</form>
+</div>
+<div>
+<div class="dane">
+<div class="big"><h3>Telefon</h3><p><a href="tel:+48501704289">+48 501 704 289</a></p></div>
+<div class="big"><h3>E-mail</h3><p><a href="mailto:biuro@bestlight.com.pl">biuro@bestlight.com.pl</a></p></div>
+<div><h3>Biuro</h3><p>ul. Studziwodzka 41<br>17-100 Bielsk Podlaski</p></div>
+<div><h3>Dane rejestrowe</h3><p>BEST-LIGHT Karina Wiśniewska<br>ul. Zagórna 19/29, 15-820 Białystok<br>NIP 776-127-79-19</p></div>
+</div>
+<div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Studziwodzka+41,+17-100+Bielsk+Podlaski&amp;output=embed" data-title="Mapa: Bestlight, ul. Studziwodzka 41, Bielsk Podlaski"></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="fg">
+<div><a class="logo" href="#" aria-label="Bestlight - do góry"><svg viewBox="0 0 324 146" aria-hidden="true"><use href="#logo"/></svg></a><p style="margin-top:12px">Alarmy, monitoring, elektryka, sieci IT i automatyka bram.</p></div>
+<div><h4>Biuro</h4><p>ul. Studziwodzka 41<br>17-100 Bielsk Podlaski</p></div>
+<div><h4>Kontakt</h4><ul><li><a href="tel:+48501704289">+48 501 704 289</a></li><li><a href="mailto:biuro@bestlight.com.pl">biuro@bestlight.com.pl</a></li></ul></div>
+<div><h4>Na stronie</h4><ul><li><a href="#uslugi">Usługi</a></li><li><a href="#realizacje">Realizacje</a></li><li><a href="#szkolenia">Szkolenia</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+</div>
+<div class="fb"><span class="cp">© <span id="rok">2026</span> BEST-LIGHT Karina Wiśniewska</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=bestlight.com.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+</div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+<button class="x" type="button" aria-label="Zamknij">&times;</button>
+<button class="pv" type="button" aria-label="Poprzednie"><svg aria-hidden="true"><use href="#gt"/></svg></button>
+<img alt="">
+<button class="nx" type="button" aria-label="Następne"><svg aria-hidden="true"><use href="#gt"/></svg></button>
+<p></p>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
