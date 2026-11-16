@@ -15,13 +15,14 @@
 <link rel="preload" as="font" type="font/woff2" href="fonts/bsc-600-pl.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-400-pl.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-600-r.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/barlow-600-pl.woff2" crossorigin>
 <style>
-@font-face{font-family:Barlow;src:url(fonts/barlow-400-r.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
-@font-face{font-family:Barlow;src:url(fonts/barlow-400-pl.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
-@font-face{font-family:Barlow;src:url(fonts/barlow-600-r.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
-@font-face{font-family:Barlow;src:url(fonts/barlow-600-pl.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
-@font-face{font-family:BSC;src:url(fonts/bsc-600-r.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
-@font-face{font-family:BSC;src:url(fonts/bsc-600-pl.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Barlow;src:url(fonts/barlow-400-r.woff2) format("woff2");font-weight:400;font-display:optional;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Barlow;src:url(fonts/barlow-400-pl.woff2) format("woff2");font-weight:400;font-display:optional;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Barlow;src:url(fonts/barlow-600-r.woff2) format("woff2");font-weight:600;font-display:optional;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Barlow;src:url(fonts/barlow-600-pl.woff2) format("woff2");font-weight:600;font-display:optional;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:BSC;src:url(fonts/bsc-600-r.woff2) format("woff2");font-weight:600;font-display:optional;unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:BSC;src:url(fonts/bsc-600-pl.woff2) format("woff2");font-weight:600;font-display:optional;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
 @font-face{font-family:"BSC fb";src:local("Arial Narrow"),local("Arial");size-adjust:92%;ascent-override:96%}
 @font-face{font-family:"Barlow fb";src:local("Arial");size-adjust:96%;ascent-override:96%}
 :root{--b:#0168B3;--b2:#01579A;--deep:#062C52;--ink:#0F1B2A;--mut:#4D5A6B;--g:#EEF2F6;--line:#D6DDE7;--hh:70px;--w:min(92vw,1720px)}
@@ -320,25 +321,25 @@ form{grid-template-columns:1fr}
 </div>
 <ol class="tr">
 <li id="alarmy">
-<div class="ph"><img src="img/alarm-400.webp" srcset="img/alarm-400.webp 400w, img/alarm-800.webp 600w" sizes="(max-width:760px) 88vw, (max-width:1100px) 42vw, 18vw" width="600" height="360" loading="lazy" alt="Montaż czujki alarmowej na suficie"></div>
+<div class="ph"><img src="img/alarm-400.webp" srcset="img/alarm-400.webp 400w, img/alarm-800.webp 600w" sizes="(max-width:760px) calc(92vw - 40px), (max-width:1100px) 40vw, 18vw" width="600" height="360" loading="lazy" alt="Montaż czujki alarmowej na suficie"></div>
 <h3>Instalacje alarmowe</h3>
 <p>Alarmy przewodowe i bezprzewodowe dla domów, firm i obiektów publicznych.</p>
 <ul><li>dobór i montaż centrali, np. SATEL, GENEVO</li><li>montaż urządzeń kupionych u nas</li><li>ochrona osób i mienia</li></ul>
 </li>
 <li id="monitoring">
-<div class="ph"><img src="img/monitoring-400.webp" srcset="img/monitoring-400.webp 400w, img/monitoring-800.webp 600w" sizes="(max-width:760px) 88vw, (max-width:1100px) 42vw, 18vw" width="600" height="360" loading="lazy" alt="Kamera kopułkowa systemu monitoringu"></div>
+<div class="ph"><img src="img/monitoring-400.webp" srcset="img/monitoring-400.webp 400w, img/monitoring-800.webp 600w" sizes="(max-width:760px) calc(92vw - 40px), (max-width:1100px) 40vw, 18vw" width="600" height="360" loading="lazy" alt="Kamera kopułkowa systemu monitoringu"></div>
 <h3>Monitoring</h3>
 <p>Systemy wizyjne analogowe i IP dla posesji, firm i zakładów pracy.</p>
 <ul><li>projekt i dobór kamer</li><li>dostawa, montaż i konfiguracja</li><li>serwis i konserwacja</li></ul>
 </li>
 <li id="elektryka">
-<div class="ph"><img src="img/elektryka-400.webp" srcset="img/elektryka-400.webp 400w, img/elektryka-800.webp 798w" sizes="(max-width:760px) 88vw, (max-width:1100px) 42vw, 18vw" width="798" height="481" loading="lazy" alt="Listwy zaciskowe w rozdzielnicy elektrycznej"></div>
+<div class="ph"><img src="img/elektryka-400.webp" srcset="img/elektryka-400.webp 400w, img/elektryka-800.webp 798w" sizes="(max-width:760px) calc(92vw - 40px), (max-width:1100px) 40vw, 18vw" width="798" height="481" loading="lazy" alt="Listwy zaciskowe w rozdzielnicy elektrycznej"></div>
 <h3>Instalacje elektryczne</h3>
 <p>Projekt i wykonanie w mieszkaniach, domach, sklepach i zakładach przemysłowych.</p>
 <ul><li>projekt instalacji elektrycznej</li><li>pełen zakres prac instalacyjnych</li><li>zasilanie alarmów i kamer</li></ul>
 </li>
 <li id="sieci">
-<div class="ph"><img src="img/sieci-400.webp" srcset="img/sieci-400.webp 400w, img/sieci-600.webp 600w, img/sieci-800.webp 800w" sizes="(max-width:760px) 88vw, (max-width:1100px) 42vw, 18vw" width="800" height="600" loading="lazy" alt="Złącza światłowodowe w przełącznicy"></div>
+<div class="ph"><img src="img/sieci-400.webp" srcset="img/sieci-400.webp 400w, img/sieci-600.webp 600w, img/sieci-800.webp 800w" sizes="(max-width:760px) calc(92vw - 40px), (max-width:1100px) 40vw, 18vw" width="800" height="600" loading="lazy" alt="Złącza światłowodowe w przełącznicy"></div>
 <h3>Sieci IT</h3>
 <p>Projekt i budowa sieci komputerowych, także łączenie oddziałów firmy w jeden system.</p>
 <ul><li>sieci kablowe i radiowe, WiFi</li><li>kopie zapasowe i archiwizacja danych</li><li>doradztwo przy wyborze sprzętu</li></ul>
